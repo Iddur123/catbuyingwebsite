@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbie</title>
+    <style>
+        .firstpage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10rem;
+            margin: 0;
+        }
+        header h1{
+            font-size: 5rem;
+            text-shadow: 5px 5px 4px rgb(0, 0, 0);
+        }
+        header::before{
+        content: "";
+        color: rgb(37, 168, 105);
+        background: url('https://source.unsplash.com/1600x900/?nature,water')
+          no-repeat center center/cover;
+        position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       z-index: -1;
+       opacity: 0.5;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    .box{
+            background: rgb(0, 0, 0);
+            height: 2rem;
+            width: 2rem;
+            display: flex;
+            text-align: center;
+            border-radius: 100%;
+            box-shadow: 5px 5px 4px rgb(0, 0, 0);
+            transition: all 1s 0s ease-in-out;
+            margin: 0.5rem;
+        }
+        .box:hover{
+            background-color: rgb(255, 255, 255);
+            width: 5rem;
+            height: 2.5rem;
+            border-radius: 40%;
+        }
+        .box p{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding-left: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+        <div class="firstpage"><h1>Welcome</h1></div>
+        <a href="firstpage.html" style="text-decoration: none;"><div class="box">
+            <p><b>1</b></p>
+        </div></a>
+        <a href="https://bikroy.com/en/ads/i/bangladesh/pets/cat" style="text-decoration: none;"><div class="box">
+            <p><b>2</b></p>
+        </div></a>
+    </section>
+    </header>
+    <section id="page1"></section>
+    
+</body>
+</html>
